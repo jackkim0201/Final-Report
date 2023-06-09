@@ -45,7 +45,7 @@ class SimpleChatBot:
             if r[0] == self.questions[i]: # 레벤슈타인 거리가 가장 작은 값의 질문과 question 리시트의 질문이 일치하는 인덱스를 찾음
                 best_match_index = i
         
-        return self.answers[best_match_index]
+        return self.answers[best_match_index] #찾은 인덱스로 답변을 리턴
     
 # CSV 파일 경로를 지정하세요.
 filepath = 'ChatbotData.csv'
@@ -61,3 +61,4 @@ while True:
         break
     response = chatbot.find_best_answer(input_sentence)
     print('Chatbot:', response)
+
